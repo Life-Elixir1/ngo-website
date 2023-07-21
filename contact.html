@@ -16,6 +16,7 @@
       font-family: Arial, sans-serif;
       display: flex;
       min-height: 100vh;
+      flex-direction: column;
       margin: 0;
     }
 
@@ -110,7 +111,7 @@
   </style>
 </head>
 
-<body>
+  <body>
   <header>
     <h1>Contact Us</h1>
   </header>
@@ -137,21 +138,20 @@
       <p><strong>Phone:</strong> +234 810 026 9517, +234 806 430 2714</p>
     </div>
 
-<div class="contact-form">
-  <h2>Send us a Message</h2>
-  <form action="https://formspree.io/f/xoqovwjo" method="post">
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" required>
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" required>
-    <label for="message">Message:</label>
-    <textarea id="message" name="message" rows="4" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</div>
-<br>
+  <div class="contact-form">
+    <h2>Send us a Message</h2>
+    <form action="https://formspree.io/f/xoqovwjo" method="post">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </div><br>
   <footer class="footer">
-    <p>&copy; 20231 Life-Elixir Care Foundation (Registration Number: 7057210). All rights reserved.</p>
+    <p>&copy; 2023 Life-Elixir Care Foundation (Registration Number: 7057210). All rights reserved.</p>
   </footer>
 </body>
 
