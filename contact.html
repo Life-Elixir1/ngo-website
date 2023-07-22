@@ -71,6 +71,7 @@
       padding: 0;
       margin: 0;
       z-index: 1;
+      min-width: 150px;
     }
 
     nav ul li:hover ul {
@@ -80,6 +81,7 @@
     nav ul li ul li {
       display: block;
       width: 100%;
+      margin-bottom: 10px;
     }
 
     nav ul li ul li a {
@@ -92,6 +94,39 @@
     nav ul li ul li a:hover {
       background-color: #e6e6e6;
     }
+
+    nav ul li:hover .sub-menu {
+  display: block;
+}
+
+nav ul li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  padding: 5px;
+  margin: 5px;
+  z-index: 1;
+  min-width: 150px;
+}
+
+nav ul li .sub-menu li {
+  display: block;
+  margin-bottom: 10px;
+}
+
+nav ul li .sub-menu li a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+  margin-bottom: 10px;
+}
+
+nav ul li .sub-menu li a:hover {
+  background-color: #e6e6e6;
+}
 
     .container {
       max-width: 960px;
@@ -156,8 +191,6 @@
         <a href="#">Projects</a>
         <ul>
           <li><a href="projects.html">Project Categories</a></li>
-        </ul>
-        <ul>
           <li><a href="applications.html">Applications</a></li>
         </ul>
       </li>
