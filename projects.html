@@ -32,6 +32,11 @@
       text-align: center;
     }
 
+    nav {
+      background-color: #f4f4f4;
+      padding: 10px;
+    }
+    
     nav ul {
       list-style-type: none;
       margin: 0;
@@ -257,6 +262,19 @@
   <footer class="footer">
     &copy; 2023 Life-Elixir Care Foundation (Registration Number: 7057210). All rights reserved.
   </footer>
+
+    <script>
+    function toggleApplications() {
+      var applicationsSection = document.getElementById('applications');
+      applicationsSection.style.display = (applicationsSection.style.display === 'none') ? 'block' : 'none';
+    }
+
+    function toggleApplicationRequirements() {
+      var applicationRequirementsSection = document.getElementById('application-requirements');
+      applicationRequirementsSection.style.display = (applicationRequirementsSection.style.display === 'none') ? 'block' : 'none';
+    }
+  </script>
+  
 </body>
 
 </html>
