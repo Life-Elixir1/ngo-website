@@ -88,12 +88,41 @@
       background-color: #e6e6e6;
     }
 
+    nav ul li:hover .sub-menu {
+  display: block;
+}
+
+nav ul li .sub-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #f4f4f4;
+  padding: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+nav ul li .sub-menu li {
+  display: block;
+}
+
+nav ul li .sub-menu li a {
+  display: block;
+  padding: 5px 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+nav ul li .sub-menu li a:hover {
+  background-color: #e6e6e6;
+}
+
     h2 {
       font-size; 22px
     }
     
     h3 {
-      color: #49a33b;
       font-size; 19px
     }
 
@@ -113,10 +142,6 @@
 
     .project {
       margin-top: 40px;
-    }
-
-    .project h3 {
-      color: #49a33b;
     }
 
     .project img {
